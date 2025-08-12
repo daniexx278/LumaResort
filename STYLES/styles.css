@@ -77,12 +77,12 @@ header nav ul {
   border-radius: 999px; /* Hace el óvalo */
   transition: background-color 0.3s ease;
   border: none; /* Sin borde */
+  background-color: #1d3a8a;
 }
 
 header nav ul li,
 input,
-button,
-#buttonBanner {
+button {
   background-color: #58b9f4; /* Color celeste como en la imagen */
   padding: 10px 25px; /* Espaciado interno */
   border-radius: 999px; /* Hace el óvalo */
