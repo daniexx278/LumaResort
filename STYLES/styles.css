@@ -4,9 +4,23 @@
   box-sizing: border-box;
   font-family: 'Inter';
 }
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 body {
   width: 100%;
   min-height: 100%;
+  animation: fadeIn 0.8s ease-in-out;
 }
 header {
   display: flex;
@@ -27,8 +41,17 @@ header div {
 
 header nav {
   width: 100%;
-
   margin-right: 40px;
+  align-self: flex-start;
+}
+header img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-left: 20px;
 }
 header nav ul {
   display: flex;
@@ -51,7 +74,10 @@ button,
   border: none; /* Sin borde */
 }
 
-header nav ul li:hover {
+header nav ul li:hover,
+input:hover,
+button:hover,
+#buttonBanner:hover {
   background-color: #4aa7df; /* Efecto hover */
 }
 
@@ -59,7 +85,6 @@ header nav ul li a {
   text-decoration: none;
   color: #0a0a0a; /* Texto negro */
   font-weight: 500;
-  font-family: Arial, sans-serif;
 }
 form {
   display: flex;
@@ -205,7 +230,6 @@ form {
   background-color: #8ac6f2;
   text-align: center;
   padding: 50px 20px;
-  font-family: Arial, sans-serif;
 }
 
 #servicios h2 {
@@ -325,8 +349,12 @@ form {
 }
 
 .tarjeta .estrellas {
+  width: 100%;
   color: gold;
   margin: 5px 0;
+  font-size: x-large;
+  text-align: center;
+  align-self: center;
 }
 
 .tarjeta .comentario {
@@ -600,6 +628,8 @@ textarea {
   height: 50px;
   display: block;
   margin: 0 auto 10px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .footer p {
