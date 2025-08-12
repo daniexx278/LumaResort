@@ -21,8 +21,11 @@ body {
   width: 100%;
   min-height: 100%;
   animation: fadeIn 0.8s ease-in-out;
+  margin-top: 50px;
 }
 header {
+  position: fixed;
+  top: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,6 +34,7 @@ header {
   background-color: #c2dded;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 100%;
+  z-index: 1000;
 }
 header div {
   width: 100%;
@@ -61,6 +65,17 @@ header nav ul {
   padding: 0;
   margin: 0;
   place-self: center;
+}
+
+#buttonBanner {
+  color: #f0f0f0;
+  font-family: 'Inter';
+  font-size: 2em;
+  font-weight: bold;
+  padding: 10px 25px; /* Espaciado interno */
+  border-radius: 999px; /* Hace el óvalo */
+  transition: background-color 0.3s ease;
+  border: none; /* Sin borde */
 }
 
 header nav ul li,
@@ -119,6 +134,7 @@ form {
 .carousel h1 {
   font-size: 3rem;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  margin-bottom: 40px;
 }
 
 @keyframes cambioImagenes {
@@ -141,12 +157,16 @@ form {
   text-align: center;
   padding: 40px;
   background: #c2dded;
+  font-weight: bold;
+  color: #1d3a8a;
+  font-size: 1.8rem;
 }
 
 #descubre .subtitulo {
-  max-width: 600px;
+  max-width: 70%;
   margin: 0 auto 30px;
   color: #555;
+  width: 100%;
 }
 
 .carousel {
@@ -157,6 +177,7 @@ form {
 
 .cards-track {
   display: flex;
+  flex-grow: 1;
   animation: scroll 60s linear infinite;
 }
 
@@ -195,14 +216,11 @@ form {
   0% {
     transform: translateX(0);
   }
-  33% {
+  50% {
     transform: translateX(-100%);
   }
-  66% {
-    transform: translateX(-200%);
-  }
   100% {
-    transform: translateX(-300%);
+    transform: translateX(-200%);
   }
 }
 
@@ -464,8 +482,9 @@ form {
 
 .ofertas-destacadas .texto {
   flex: 1;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
+  color: #f0f0f0;
 }
 
 .ofertas-destacadas .imagenes {
