@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/STYLES/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--HEADER-->
+    <header>
+      <div id="logoHeader">
+        <h1>LUMA RESORT</h1>
+        <img src="../img/logo.png" alt="" />
+      </div>
+      <div>
+        <nav>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Habitaciones</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </nav>
+        <!--Search form-->
+        <form id="searchForm">
+          <input type="text" placeholder="Buscar..." />
+          <button type="submit">Buscar</button>
+        </form>
+      </div>
+    </header>
+
+    <!--MAIN-->
+    <main>
+      <!--Banner Section-->
+      <section id="banner">
+        <div class="carousel">
+          <h1>Descubre el paraíso en Luma Resort</h1>
+          <button id="buttonBanner">Reservar Ahora</button>
+        </div>
+      </section>
+
+      <!--Discover Section-->
+      <section id="descubre">
+        <h2>Descubre Luma Resort</h2>
+        <p class="subtitulo">
+          Un oasis de tranquilidad y lujo te espera. Sumérgete en la belleza natural y el confort
+          sin igual de nuestro resort, creado para ofrecerte una experiencia inolvidable en cada
+          rincón.
+        </p>
+
+        <div class="carousel">
+          <div class="cards-track">
+            <!-- Se repiten las tarjetas para el efecto infinito -->
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1501117716987-c8e1ecb2104b"
+                alt="Suite Vista al Mar"
+              />
+              <h3>Suite Vista al Mar</h3>
+              <div class="rating">⭐ 4.72 (71)</div>
+              <p>
+                Habitación premium con balcón privado y jacuzzi, decoración elegante y atención
+                personalizada
+              </p>
+              <span class="precio">$350</span>
+              <span class="promo">$300/noche (estancias de 5+ noches)</span>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1542317854-f9596ae570b6"
+                alt="Paquete Romántico"
+              />
+              <h3>Paquete Romántico</h3>
+              <div class="rating">⭐ 4.72 (71)</div>
+              <p>Incluye cena gourmet, masaje en pareja y decoración especial con pétalos</p>
+              <span class="precio">$500</span>
+              <span class="promo">Incluye botella de champagne gratis</span>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+                alt="Piscina Privada"
+              />
+              <h3>Piscina Privada</h3>
+              <div class="rating">⭐ 4.72 (71)</div>
+              <p>
+                Espacio exclusivo con acceso directo a playa, servicio de mayordomo y desayuno
+                incluido
+              </p>
+              <span class="precio">$700</span>
+              <span class="promo">Promo verano: 15% de descuento</span>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1600585152220-90363fe7e115"
+                alt="Suite Familiar"
+              />
+              <h3>Suite Familiar</h3>
+              <div class="rating">⭐ 4.72 (71)</div>
+              <p>
+                Amplia habitación conectada, actividades para niños y acceso ilimitado al club
+                infantil
+              </p>
+              <span class="precio">$400</span>
+              <span class="promo">2 niños gratis (menores de 12 años)</span>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1505691938895-1758d7feb511"
+                alt="Experiencia Spa"
+              />
+              <h3>Experiencia Spa</h3>
+              <div class="rating">⭐ 4.72 (71)</div>
+              <p>
+                Tratamientos de lujo, acceso a termas y circuito hidrotermal por un día completo
+              </p>
+              <span class="precio">$250</span>
+              <span class="promo">Pack pareja: $400 (ahorra $100)</span>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+                alt="Tour Aventura"
+              />
+              <h3>Tour Aventura</h3>
+              <div class="rating">⭐ 4.72 (71)</div>
+              <p>Excursiones en kayak, snorkel y caminatas ecológicas con guía especializado</p>
+              <span class="precio">$120</span>
+              <span class="promo">3 actividades x $300</span>
+            </div>
+
+            <!-- Repetición para bucle infinito -->
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1501117716987-c8e1ecb2104b"
+                alt="Suite Vista al Mar"
+              />
+              <h3>Suite Vista al Mar</h3>
+              <div class="rating">⭐ 4.72 (71)</div>
+              <p>
+                Habitación premium con balcón privado y jacuzzi, decoración elegante y atención
+                personalizada
+              </p>
+              <span class="precio">$350</span>
+              <span class="promo">$300/noche (estancias de 5+ noches)</span>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1542317854-f9596ae570b6"
+                alt="Paquete Romántico"
+              />
+              <h3>Paquete Romántico</h3>
+              <div class="rating">⭐ 4.72 (71)</div>
+              <p>Incluye cena gourmet, masaje en pareja y decoración especial con pétalos</p>
+              <span class="precio">$500</span>
+              <span class="promo">Incluye botella de champagne gratis</span>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+                alt="Piscina Privada"
+              />
+              <h3>Piscina Privada</h3>
+              <div class="rating">⭐ 4.72 (71)</div>
+              <p>
+                Espacio exclusivo con acceso directo a playa, servicio de mayordomo y desayuno
+                incluido
+              </p>
+              <span class="precio">$700</span>
+              <span class="promo">Promo verano: 15% de descuento</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn-container">
+          <button>VER TODAS LAS OPCIONES</button>
+        </div>
+      </section>
+
+      <!--Services Section-->
+      <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <p class="subtitulo">Vive el Lujo en Cada Detalle</p>
+        <p class="descripcion">
+          Disfruta suites con vistas al mar, restaurantes gourmet, piscinas infinity y playa
+          privada. Relájate en nuestro spa, prueba deportes acuáticos o déjate consentir con nuestro
+          servicio personalizado. ¡Tu escape perfecto comienza aquí!
+        </p>
+
+        <div class="servicios-container">
+          <div class="servicio-card">
+            <img
+              src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092"
+              alt="Gastronomía Excepcional"
+            />
+            <h3>Gastronomía Excepcional</h3>
+            <p>
+              Buffets gourmet, restaurantes temáticos y cocina internacional con ingredientes
+              frescos.
+            </p>
+          </div>
+
+          <div class="servicio-card">
+            <img
+              src="https://images.unsplash.com/photo-1505691723518-36a5ac3be353"
+              alt="Alojamiento Premium"
+            />
+            <h3>Alojamiento Premium</h3>
+            <p>
+              Habitaciones con vista al mar, suites privadas y villas con piscina personalizada.
+            </p>
+          </div>
+
+          <div class="servicio-card">
+            <img
+              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+              alt="Ocio y Relax"
+            />
+            <h3>Ocio y Relax</h3>
+            <p>Piscinas infinity, acceso a playa privada y spa de clase mundial.</p>
+          </div>
+
+          <div class="servicio-card">
+            <img
+              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+              alt="Experiencias Únicas"
+            />
+            <h3>Experiencias Únicas</h3>
+            <p>Tours exclusivos, deportes acuáticos y actividades al aire libre.</p>
+          </div>
+
+          <div class="servicio-card">
+            <img
+              src="https://images.unsplash.com/photo-1582719478173-2d52b6b2d48e"
+              alt="Desayunos Premium"
+            />
+            <h3>Desayunos Premium</h3>
+            <p>Comienza el día con desayunos gourmet frescos y saludables.</p>
+          </div>
+
+          <div class="servicio-card">
+            <img
+              src="https://images.unsplash.com/photo-1502920514313-52581002a659"
+              alt="Traslados VIP"
+            />
+            <h3>Traslados VIP</h3>
+            <p>Servicio de transporte exclusivo y cómodo desde y hacia el resort.</p>
+          </div>
+
+          <div class="servicio-card">
+            <img
+              src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b"
+              alt="Room Service 24h"
+            />
+            <h3>Room Service 24h</h3>
+            <p>Atención a la habitación las 24 horas para tu comodidad.</p>
+          </div>
+
+          <div class="servicio-card">
+            <img
+              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+              alt="Tours Privados"
+            />
+            <h3>Tours Privados</h3>
+            <p>Excursiones personalizadas para descubrir lo mejor de la región.</p>
+          </div>
+
+          <div class="servicio-card">
+            <img
+              src="https://images.unsplash.com/photo-1505691723518-36a5ac3be353"
+              alt="Bar en la Playa"
+            />
+            <h3>Bar en la Playa</h3>
+            <p>Cócteles y bebidas refrescantes frente al mar.</p>
+          </div>
+
+          <div class="servicio-card">
+            <img
+              src="https://images.unsplash.com/photo-1502920514313-52581002a659"
+              alt="Gimnasio con Vista"
+            />
+            <h3>Gimnasio con Vista</h3>
+            <p>Entrena con vistas panorámicas al océano.</p>
+          </div>
+
+          <div class="servicio-card">
+            <img
+              src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b"
+              alt="Cenas Románticas"
+            />
+            <h3>Cenas Románticas</h3>
+            <p>Veladas exclusivas para disfrutar en pareja.</p>
+          </div>
+        </div>
+      </section>
+
+      <!--Recommend Section-->
+
+      <section id="testimonios">
+        <h2>Lo que dicen nuestros huespedes</h2>
+        <p class="descripcion">
+          "Un refugio donde el lujo y la naturaleza se unen. Vive momentos inolvidables en un
+          espacio diseñado para tu máximo confort y relax, con detalles que transforman tu estancia
+          en una experiencia única."
+        </p>
+
+        <div class="rating">
+          <span>5.0 Rating</span>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Trustpilot_logo.svg/2560px-Trustpilot_logo.svg.png"
+            alt="Trustpilot"
+          />
+        </div>
+
+        <div class="tarjetas-testimonios">
+          <div class="tarjeta">
+            <img
+              src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+              alt="Testimonio 1"
+            />
+            <div class="info">
+              <p class="estrellas">★★★★★</p>
+              <p class="comentario">"Una experiencia increíble, el servicio es impecable"</p>
+              <p class="autor">Laura G.</p>
+            </div>
+          </div>
+
+          <div class="tarjeta">
+            <img
+              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+              alt="Testimonio 2"
+            />
+            <div class="info">
+              <p class="estrellas">★★★★★</p>
+              <p class="comentario">"La playa privada es un sueño hecho realidad"</p>
+              <p class="autor">Carlos M.</p>
+            </div>
+          </div>
+
+          <div class="tarjeta">
+            <img
+              src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092"
+              alt="Testimonio 3"
+            />
+            <div class="info">
+              <p class="estrellas">★★★★★</p>
+              <p class="comentario">"Las cenas gourmet superaron todas mis expectativas"</p>
+              <p class="autor">Ana R.</p>
+            </div>
+          </div>
+
+          <div class="tarjeta">
+            <img
+              src="https://images.unsplash.com/photo-1505691723518-36a5ac3be353"
+              alt="Testimonio 4"
+            />
+            <div class="info">
+              <p class="estrellas">★★★★★</p>
+              <p class="comentario">"El spa es el mejor que he visitado, ¡relax total!"</p>
+              <p class="autor">David S.</p>
+            </div>
+          </div>
+
+          <div class="tarjeta">
+            <img
+              src="https://images.unsplash.com/photo-1582719478173-2d52b6b2d48e"
+              alt="Testimonio 5"
+            />
+            <div class="info">
+              <p class="estrellas">★★★★★</p>
+              <p class="comentario">"Habitaciones con vistas que quitan el aliento"</p>
+              <p class="autor">Sofía P.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="porque-reservar">
+        <h3>¿Por qué reservar con nosotros?</h3>
+        <div class="beneficios">
+          <div class="beneficio">
+            <span>🎁</span>
+            <div>
+              <h4>Experiencia Exclusiva</h4>
+              <p>Precios competitivos y ofertas especiales que solo encontrarás en Luma Resort.</p>
+            </div>
+          </div>
+
+          <div class="beneficio">
+            <span>🏨</span>
+            <div>
+              <h4>Variedad de Lujo</h4>
+              <p>
+                Habitaciones, suites y villas con diseños únicos para adaptarse a cada preferencia.
+              </p>
+            </div>
+          </div>
+
+          <div class="beneficio">
+            <span>😊</span>
+            <div>
+              <h4>Tranquilidad Garantizada</h4>
+              <p>
+                Reservas seguras, políticas flexibles y un equipo de atención al cliente disponible
+                24/7.
+              </p>
+            </div>
+          </div>
+
+          <div class="beneficio">
+            <span>💎</span>
+            <div>
+              <h4>Calidad Superior</h4>
+              <p>
+                Cada espacio está diseñado con elegancia y detalles pensados para tu máximo confort.
+              </p>
+            </div>
+          </div>
+
+          <div class="beneficio">
+            <span>⭐</span>
+            <div>
+              <h4>Recomendado por Huéspedes</h4>
+              <p>Calificado como excelente en servicio, comodidad y experiencias memorables.</p>
+            </div>
+          </div>
+
+          <div class="beneficio">
+            <span>🚌</span>
+            <div>
+              <h4>Llegada Sin Esfuerzo</h4>
+              <p>
+                Check-in rápido y opciones de transporte premium para que tu experiencia comience
+                sin preocupaciones.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Offers Section-->
+
+      <section id="ofertas-especiales">
+        <h2>Ofertas Especiales</h2>
+        <button class="btn-principal">Ver todas las ofertas</button>
+
+        <div class="oferta-principal">
+          <h3>🌟Ofertas Exclusivas para tu Escape Perfecto🌟</h3>
+          <p>
+            Descubre paquetes con descuentos en suites, spa, gastronomía y experiencias únicas.
+            ¡Aprovecha promociones limitadas para vivir el lujo que mereces!
+          </p>
+        </div>
+
+        <!-- Bloque de 5 ofertas -->
+        <div class="ofertas-destacadas">
+          <div class="texto">
+            <h4>5 Ofertas que No Puedes Perderte</h4>
+          </div>
+          <div class="imagenes">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Piscina" />
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945" alt="Playa" />
+            <img
+              src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092"
+              alt="Gimnasio"
+            />
+            <div class="overlay-img">
+              <img src="https://images.unsplash.com/photo-1505691723518-36a5ac3be353" alt="Spa" />
+              <span class="overlay-text">Descubre Más</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0" alt="Resort" />
+          </div>
+        </div>
+
+        <!-- Tarjetas secundarias -->
+        <div class="tarjetas-secundarias">
+          <div class="tarjeta">
+            <img src="https://images.unsplash.com/photo-1582719478173-2d52b6b2d48e" alt="Guía" />
+            <h5>Guía de Confort</h5>
+            <p>Aprende los secretos para disfrutar al máximo tu suite de lujo.</p>
+            <button class="btn-secundario">Explorar Consejos</button>
+          </div>
+
+          <div class="tarjeta">
+            <img
+              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+              alt="Diseña tu escape"
+            />
+            <h5>Diseña tu Escape Perfecto</h5>
+            <p>
+              Recibe inspiración mensual con ideas para personalizar tu experiencia en el resort.
+            </p>
+            <button class="btn-secundario">Ver Recomendaciones</button>
+          </div>
+        </div>
+      </section>
+
+      <!--Contact Section-->
+
+      <section class="planifica">
+        <h2>Planifica tu Estancia</h2>
+        <p class="descripcion">
+          Contáctanos para más información o para realizar tu reserva. Estamos listos para ayudarte
+          a crear tu experiencia ideal.
+        </p>
+
+        <form class="formulario">
+          <label>
+            Nombre completo
+            <input type="text" placeholder="Tu nombre" />
+          </label>
+
+          <label>
+            Correo
+            <input type="email" placeholder="tu@example.com" />
+          </label>
+
+          <label>
+            Fecha de llegada
+            <input type="text" placeholder="dd/mm/aaaa" />
+          </label>
+
+          <label>
+            Fecha de salida
+            <input type="text" placeholder="dd/mm/aaaa" />
+          </label>
+
+          <label>
+            Número de huéspedes
+            <input type="text" placeholder="1 huésped" />
+          </label>
+
+          <label>
+            Mensaje (Opcional)
+            <textarea placeholder="¿Alguna petición especial?"></textarea>
+          </label>
+
+          <button type="submit" class="btn-enviar">ENVIAR SOLICITUD</button>
+        </form>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-logo">
+          <img src="logo.png" alt="Luma Resort" />
+        </div>
+        <p>2025 Luma Resort. Todos los derechos Reservados.</p>
+      </footer>
+    </main>
+  </body>
+</html>

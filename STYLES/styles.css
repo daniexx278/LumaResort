@@ -1,0 +1,609 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter';
+}
+body {
+  width: 100%;
+  min-height: 100%;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  padding: 10px;
+  background-color: #c2dded;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+header div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav {
+  width: 100%;
+
+  margin-right: 40px;
+}
+header nav ul {
+  display: flex;
+  justify-content: center; /* Centra todos los li */
+  gap: 10px; /* Espacio entre cada botón */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  place-self: center;
+}
+
+header nav ul li,
+input,
+button,
+#buttonBanner {
+  background-color: #58b9f4; /* Color celeste como en la imagen */
+  padding: 10px 25px; /* Espaciado interno */
+  border-radius: 999px; /* Hace el óvalo */
+  transition: background-color 0.3s ease;
+  border: none; /* Sin borde */
+}
+
+header nav ul li:hover {
+  background-color: #4aa7df; /* Efecto hover */
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #0a0a0a; /* Texto negro */
+  font-weight: 500;
+  font-family: Arial, sans-serif;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+/*---------BANNER-----*/
+#banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  animation: cambioImagenes 30s infinite; /* 3 imágenes, 10s cada una */
+}
+
+.carousel h1 {
+  font-size: 3rem;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+@keyframes cambioImagenes {
+  0% {
+    background-image: url('https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/244QE6GXHBGE5AJV6VCLLG3MVE.jpg');
+  }
+  33.33% {
+    background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+  }
+  66.66% {
+    background-image: url('https://images.unsplash.com/photo-1493558103817-58b2924bce98');
+  }
+  100% {
+    background-image: url('https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/244QE6GXHBGE5AJV6VCLLG3MVE.jpg');
+  }
+}
+
+/* ---------DISCOVER-----*/
+#descubre {
+  text-align: center;
+  padding: 40px;
+  background: #c2dded;
+}
+
+#descubre .subtitulo {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  color: #555;
+}
+
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.cards-track {
+  display: flex;
+  animation: scroll 60s linear infinite;
+}
+
+.card {
+  flex: 0 0 calc(100% / 3);
+  box-sizing: border-box;
+  padding: 15px;
+  background: #19348d;
+  border-radius: 10px;
+  margin: 0 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.rating {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.precio {
+  font-weight: bold;
+  color: #c2dded;
+}
+
+.promo {
+  font-size: 13px;
+  color: #e67e22;
+}
+
+/* Animación: 3 tarjetas cada 10s */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-100%);
+  }
+  66% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(-300%);
+  }
+}
+
+.btn-container {
+  margin-top: 20px;
+}
+
+.btn-container button {
+  background-color: #1a3d92;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-container button:hover {
+  background-color: #14407a;
+}
+
+/*---------SERVICES-----*/
+
+#servicios {
+  background-color: #8ac6f2;
+  text-align: center;
+  padding: 50px 20px;
+  font-family: Arial, sans-serif;
+}
+
+#servicios h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1d3a8a;
+  margin-bottom: 10px;
+}
+
+#servicios .subtitulo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1d3a8a;
+  margin-bottom: 10px;
+}
+
+#servicios .descripcion {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  font-size: 1rem;
+  color: #1d3a8a;
+}
+
+.servicios-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.servicio-card {
+  background: white;
+  border-radius: 20px;
+  width: 250px;
+  padding: 15px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.servicio-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.servicio-card h3 {
+  font-size: 1.1rem;
+  color: #1d3a8a;
+  margin-bottom: 8px;
+}
+
+.servicio-card p {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* -------RECOMMEND -----*/
+
+/* Testimonios */
+#testimonios {
+  background: #8ac6f2;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#testimonios h2 {
+  font-size: 2.5rem;
+  color: #1d3a8a;
+}
+
+#testimonios .descripcion {
+  max-width: 800px;
+  margin: 15px auto 30px;
+  font-size: 1rem;
+  color: #1d3a8a;
+}
+
+.rating {
+  display: inline-flex;
+  align-items: center;
+  background: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #1d3a8a;
+  margin-bottom: 30px;
+}
+
+.rating img {
+  height: 20px;
+  margin-left: 5px;
+}
+
+.tarjetas-testimonios {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: #e8eef2;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.tarjeta {
+  background: none;
+  text-align: left;
+  max-width: 200px;
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.tarjeta .estrellas {
+  color: gold;
+  margin: 5px 0;
+}
+
+.tarjeta .comentario {
+  font-style: italic;
+  color: #333;
+}
+
+.tarjeta .autor {
+  font-weight: bold;
+  margin-top: 5px;
+  color: #555;
+}
+
+/* Beneficios */
+#porque-reservar {
+  background: #8ac6f2;
+  padding: 50px 20px;
+  text-align: center;
+  color: #1d3a8a;
+}
+
+#porque-reservar h3 {
+  font-size: 1.8rem;
+  color: #1d3a8a;
+  margin-bottom: 40px;
+}
+
+.beneficios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.beneficio {
+  display: flex;
+  align-items: flex-start;
+  max-width: 400px;
+  text-align: left;
+  gap: 15px;
+}
+
+.beneficio span {
+  font-size: 2rem;
+}
+
+.beneficio h4 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.beneficio p {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/*---------OFFER-----*/
+
+#ofertas-especiales {
+  background: #7ea8f8;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#ofertas-especiales h2 {
+  font-size: 2.5rem;
+  color: #1d3a8a;
+}
+
+.btn-principal {
+  background: #1f2937;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 999px;
+  border: none;
+  margin-top: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.oferta-principal {
+  margin-top: 30px;
+}
+
+.oferta-principal h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.oferta-principal p {
+  font-size: 0.95rem;
+  max-width: 700px;
+  margin: auto;
+  color: #1f2937;
+}
+
+/* Bloque ofertas destacadas */
+.ofertas-destacadas {
+  background: #55c9f0;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.ofertas-destacadas .texto {
+  flex: 1;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.ofertas-destacadas .imagenes {
+  display: flex;
+  gap: 10px;
+}
+
+.ofertas-destacadas img {
+  height: 120px;
+  width: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.overlay-img {
+  position: relative;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.7);
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* Tarjetas secundarias */
+.tarjetas-secundarias {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.tarjeta {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  max-width: 400px;
+  text-align: left;
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.tarjeta h5 {
+  margin: 15px;
+  font-size: 1.1rem;
+}
+
+.tarjeta p {
+  margin: 0 15px 15px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.btn-secundario {
+  background: black;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 999px;
+  border: none;
+  margin: 0 15px 15px;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+/*--------- CONTACT AND FOOTER-----*/
+
+.planifica {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #d0e6f4;
+}
+
+.planifica h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #123c78;
+}
+
+.planifica .descripcion {
+  font-size: 14px;
+  max-width: 700px;
+  margin: 10px auto 30px;
+  color: #1f3f77;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  background-color: #dff4fa;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.formulario label {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+  margin: 10px 0 5px;
+  color: #1f3f77;
+  width: 100%;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+.formulario input {
+  background-color: white;
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+.btn-enviar {
+  display: block;
+  margin: 20px auto 0;
+  background-color: #4d6fc9;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-enviar:hover {
+  background-color: #3a5aa8;
+}
+
+.footer {
+  background-color: #c7ddf0;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.footer-logo img {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.footer p {
+  font-size: 13px;
+  color: #123c78;
+  margin: 0;
+}
